@@ -22,5 +22,5 @@ import './commands'
 import 'cypress-mochawesome-reporter/register';
 import 'cypress-xpath'
 
-import registerCypressGrep from '@cypress/grep/src/support'
+const registerCypressGrep = require('@cypress/grep')
 registerCypressGrep()
