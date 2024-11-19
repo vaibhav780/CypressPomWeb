@@ -8,8 +8,8 @@ on:
         - master
 
 jobs:
-    ui_test_chrome
-    runs-on: ubuntu-latest
+    cypress-run:
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout_code
         uses: actions/checkout@v4
