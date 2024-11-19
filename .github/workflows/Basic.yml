@@ -1,15 +1,13 @@
 name: Cypress E2E tests
 # trigger
-on: 
+on:
   workflow_dispatch:
 
-  push:
-      branches:
-        - master
-
 jobs:
-    cypress-run:
+  my_job:
+    name: Cypress test
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout_code
         uses: actions/checkout@v4
